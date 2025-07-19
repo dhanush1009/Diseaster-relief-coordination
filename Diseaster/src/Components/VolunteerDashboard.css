@@ -1,0 +1,25 @@
+.volunteer-dashboard {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+.request-card {
+  background: #f0f8ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.request-card button {
+  margin: 5px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
