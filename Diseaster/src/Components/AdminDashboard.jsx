@@ -5,20 +5,6 @@ import './AdminDashboard.css';
 const AdminDashboard = () => {
   const [stats, setStats] = useState({ total: 0, pending: 0, completed: 0 });
 
-//   useEffect(() => {
-//     const loadStats = async () => {
-//       try {
-//         const token = localStorage.getItem('token');
-//         const res = await axios.get('http://localhost:5000/api/requests/stats', {
-//           headers: { Authorization: `Bearer ${token}` }
-//         });
-//         setStats(res.data);
-//       } catch (err) {
-//         console.error(err);
-//       }
-//     };
-//     loadStats();
-//   }, []);
 useEffect(() => {
   const loadStats = async () => {
     try {

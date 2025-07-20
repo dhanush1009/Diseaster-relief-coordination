@@ -1,0 +1,21 @@
+.assign-volunteers input[type="text"] {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.assign-volunteers button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.assign-volunteers button:hover {
+  background-color: #333;
+}
+.assign-volunteers th {
+  user-select: none;
+}

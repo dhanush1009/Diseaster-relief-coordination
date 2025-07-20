@@ -26,8 +26,8 @@ const Login = () => {
         navigate('/admin')
       } else if (role === 'victim') {
         navigate('/request-help')
-      } else {
-        navigate('/dashboard')
+      } else if (role === 'volunteer') {
+        navigate('/volunteer-dashboard')
       }
 
     } catch (err) {

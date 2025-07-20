@@ -37,8 +37,6 @@ const Navbar = () => {
         {token && role === 'admin' && (
           <>
             <NavLink to="/admin">Admin Dashboard</NavLink>
-            <NavLink to="/view-requests">View Requests</NavLink>
-            <NavLink to="/assign-volunteers">Assign Volunteers</NavLink>
             <button onClick={handleLogout}>Logout</button>
           </>
         )}
