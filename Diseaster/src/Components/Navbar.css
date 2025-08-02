@@ -2,20 +2,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0077b6;
+  background: #0077b6;  /* your preferred blue color */
   padding: 10px 20px;
   color: #fff;
 }
+
 .navbar-brand {
   display: flex;
   align-items: center;
+  font-size: 1.2rem;
   font-weight: bold;
 }
+
 .logo {
-  width: 30px;
-  margin-right: 8px;
+  height: 40px;         /* adjust as needed */
+  width: 40px;          /* make width equal to height */
+  margin-right: 10px;
+  border-radius: 50%;   /* make it circular */
+  object-fit: cover;    /* keep the image nicely cropped inside the circle */
 }
-.navbar-links a, .navbar-links button {
+
+.navbar-links a,
+.navbar-links button {
   margin-left: 12px;
   color: #fff;
   text-decoration: none;
@@ -24,6 +32,7 @@
   font-weight: 500;
   cursor: pointer;
 }
+
 .navbar-links a.active {
   text-decoration: underline;
 }

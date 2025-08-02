@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+import Logo from '../assets/Logo.png';  // ✅ imported logo
 import './Navbar.css';
 
 const Navbar = () => {
@@ -18,8 +19,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <img src="/logo.png" alt="Logo" className="logo" />
-        Disaster Relief
+        <img src={Logo} alt="Logo" className="logo" />  {/* ✅ fixed here */}
+        <span>Disaster Relief</span>
       </div>
       <div className="navbar-links">
         {!token && (

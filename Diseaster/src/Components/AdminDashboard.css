@@ -1,28 +1,78 @@
-.admin-dashboard {
-  max-width: 900px;
-  margin: 30px auto;
-  text-align: center;
+.dashboard-container {
+  padding: 20px;
+  font-family: sans-serif;
 }
+
+.alert-critical {
+  background: #ffe0e0;
+  border: 1px solid red;
+  color: red;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
 .stats-cards {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 1rem;
   margin-bottom: 20px;
 }
+
 .card {
-  background: #0077b6;
-  color: white;
+  flex: 1;
   padding: 15px;
   border-radius: 8px;
-  width: 150px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
-.admin-actions a {
-  display: inline-block;
-  margin: 0 10px;
-  background: #90e0ef;
-  color: #000;
-  padding: 8px 12px;
-  border-radius: 6px;
-  text-decoration: none;
+
+.card.total { background: #3b82f6; }
+.card.pending { background: #f59e0b; }
+.card.in-progress { background: #0ea5e9; }
+.card.completed { background: #10b981; }
+.card.critical { background: #ef4444; }
+
+.quick-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
 }
+
+.quick-actions button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.request-list {
+  margin-top: 20px;
+}
+
+.request-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.status-tags {
+  margin-top: 5px;
+}
+
+.tag {
+  padding: 3px 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+.tag.pending { background: #f59e0b; }
+.tag.inprogress { background: #0ea5e9; }
+.tag.completed { background: #10b981; }
+.tag.critical { background: #ef4444; }
